@@ -1,4 +1,5 @@
-# Pulitore Testo Webinar 🧹
+# Pulitore Testo
+https://pecoraroamal.github.io/CleanTranscribe/
 
 Una semplice interfaccia web per pulire testo da trascrizioni di video.  
 Rimuove i timestamp e unisce le righe in un testo continuo, pronto per essere mandato all'AI.

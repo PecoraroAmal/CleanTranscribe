@@ -3,8 +3,8 @@ function pulisciTesto() {
 
   if (!input.trim()) return;
 
-  // Rimuove timestamp tipo 0:05, 12:34 ecc.
-  let testo = input.replace(/\b\d{1,2}:\d{2}\b/g, '');
+  // Rimuove timestamp tipo 0:05, 12:34, 1:23:34 ecc.
+  let testo = input.replace(/\b\d{1,2}:\d{2}(:\d{2})?\b/g, '');
 
   // Rimuove newline e spazi multipli
   testo = testo.replace(/\n+/g, ' ').replace(/\s{2,}/g, ' ').trim();
