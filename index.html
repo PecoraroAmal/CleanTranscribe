@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pulitore Testo Webinar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <div class="container">
+    <header>
+      <h1>Pulitore Testo Webinar</h1>
+    </header>
+
+    <textarea id="inputText" placeholder="Incolla qui il testo..."></textarea>
+
+    <div class="button-center">
+      <button id="cleanButton" onclick="pulisciTesto()">Pulisci</button>
+    </div>
+
+    <div id="outputContainer">
+      <div id="output"></div>
+      <button id="copyButton" onclick="copiaOutput()" title="Copia">📋</button>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://github.com/TUO-USERNAME/NOME-REPOSITORY" target="_blank">
+      <i class="fab fa-github"></i> Repository GitHub
+    </a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
