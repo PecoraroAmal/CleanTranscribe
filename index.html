@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CleanTranscribe</title>
   <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="dark">
-  <div class="container">
+    <div class="container">
     <header>
       <h1>CleanTranscribe</h1>
     </header>
@@ -19,17 +20,17 @@
     </div>
 
     <div id="outputContainer">
-      <div id="output"></div>
-      <button id="copyButton" onclick="copiaOutput()" title="Copia">📋</button>
+    <div class="button-center">
+        <button id="copyButton" onclick="copiaOutput()" title="Copia">📋 Copia</button>
     </div>
+    <div id="output"></div>
+    </div>
+
   </div>
 
-  <footer>
-    <a href="https://pecoraroamal.github.io/CleanTranscribe/" target="_blank">
-      <i class="fab fa-github"></i> Repository GitHub
-    </a>
-  </footer>
-
+    <footer>
+        <p>Progetto disponibile su <a href="https://github.com/PecoraroAmal/CleanTranscribe" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+    </footer>
   <script src="script.js"></script>
 </body>
 </html>

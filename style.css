@@ -6,14 +6,20 @@ body, h1, textarea, button, div, a {
   font-family: 'Segoe UI', Arial, sans-serif;
 }
 
+html, body {
+  height: 100%;
+}
+
 body.dark {
   background: #181a20;
   color: #f1f1f1;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
-  max-width: 900px; /* aumentato da 500px */
+  flex: 1;
+  width: 75%;
   margin: 40px auto 0 auto;
   background: #23262f;
   border-radius: 12px;
@@ -25,8 +31,7 @@ header h1 {
   text-align: center;
   font-size: 2.2rem;
   margin-bottom: 24px;
-  color: #00bfa6;
-  letter-spacing: 1px;
+  color: #FFD700;
 }
 
 textarea#inputText {
@@ -40,11 +45,10 @@ textarea#inputText {
   padding: 12px;
   margin-bottom: 18px;
   resize: vertical;
-  transition: border 0.2s;
 }
 
 textarea#inputText:focus {
-  border-color: #00bfa6;
+  border-color: #FFD700;
   outline: none;
 }
 
@@ -53,8 +57,8 @@ textarea#inputText:focus {
   margin-bottom: 18px;
 }
 
-button#cleanButton, button#copyButton {
-  background: #00bfa6;
+button {
+  background: #FFD700;
   color: #181a20;
   border: none;
   border-radius: 6px;
@@ -62,11 +66,10 @@ button#cleanButton, button#copyButton {
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s;
-  margin: 0 4px;
 }
 
-button#cleanButton:hover, button#copyButton:hover {
-  background: #009e8e;
+button:hover {
+  background: #e6c200;
 }
 
 #outputContainer {
@@ -74,9 +77,8 @@ button#cleanButton:hover, button#copyButton:hover {
   margin-top: 18px;
   background: #181a20;
   border-radius: 8px;
-  padding: 16px 12px;
+  padding: 20px 12px 16px 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  position: relative;
 }
 
 #output {
@@ -84,46 +86,52 @@ button#cleanButton:hover, button#copyButton:hover {
   word-break: break-word;
   font-size: 1.08rem;
   color: #f1f1f1;
-  margin-bottom: 10px;
+  margin-top: 12px;
 }
 
-button#copyButton {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    padding: 6px 12px;
-    font-size: 1.2rem;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+#topButtons {
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+#topButtons button {
+  padding: 6px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 footer {
   text-align: center;
-  margin: 32px 0 16px 0;
+  margin: 16px 0;
   color: #888;
   font-size: 1rem;
 }
 
 footer a {
-  color: #00bfa6;
+  color: #FFD700;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 footer a:hover {
-  color: #009e8e;
+  color: #e6c200;
 }
 
 @media (max-width: 600px) {
   .container {
     padding: 16px 6px 16px 6px;
-    max-width: 98vw; /* corretto da 198vw a 98vw */
+    max-width: 98vw;
   }
-  button#cleanButton, button#copyButton {
+  button {
     width: 100%;
     margin: 8px 0 0 0;
   }
