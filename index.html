@@ -5,29 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CleanTranscribe</title>
   <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/png" href="Asset/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="Asset/favicon.svg" />
+  <link rel="shortcut icon" href="Asset/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="Asset/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="CleanTranscribe" />
+  <link rel="manifest" href="Asset/site.webmanifest" />
 </head>
 <body class="dark">
-    <div class="container">
-    <header>
-      <h1>CleanTranscribe</h1>
-    </header>
-
+  <header>
+    <h1>CleanTranscribe</h1>
+  </header>
+  <div class="container">
     <textarea id="inputText" placeholder="Incolla qui il testo..."></textarea>
-
     <div class="button-center">
       <button id="cleanButton" onclick="pulisciTesto()">Pulisci</button>
     </div>
-
     <div id="outputContainer">
     <div class="button-center">
         <button id="copyButton" onclick="copiaOutput()" title="Copia">📋 Copia</button>
     </div>
     <div id="output"></div>
     </div>
-
   </div>
-
     <footer>
         <p>Progetto disponibile su <a href="https://github.com/PecoraroAmal/CleanTranscribe" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
     </footer>

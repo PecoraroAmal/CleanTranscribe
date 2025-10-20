@@ -15,5 +15,18 @@ function pulisciTesto() {
 
 function copiaOutput() {
   const outputText = document.getElementById('output').textContent;
-  navigator.clipboard.writeText(outputText);
+  const copyButton = document.getElementById('copyButton');
+
+  // Copia il testo
+  navigator.clipboard.writeText(outputText).then(() => {
+    // Cambia il testo del pulsante
+    const originalText = copyButton.textContent;
+    copyButton.textContent = '✅ Copiato!';
+
+    // Dopo 5 secondi torna al testo originale
+    setTimeout(() => {
+      copyButton.textContent = originalText;
+    }, 2000);
+  });
 }
+

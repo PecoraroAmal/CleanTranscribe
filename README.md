@@ -16,7 +16,7 @@ Rimuove i timestamp e unisce le righe in un testo continuo, pronto per essere ma
 
 1. Incolla il testo nel box
 2. Clicca su **Pulisci**
-3. Dopo la pulizia, clicca sull’icona **📋** per copiare
+3. Dopo la pulizia, clicca sul pulsante **📋 Copia** per copiare
 
 ## 📦 File inclusi
 
