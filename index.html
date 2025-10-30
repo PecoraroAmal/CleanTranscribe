@@ -18,19 +18,27 @@
     <h1>CleanTranscribe</h1>
   </header>
   <div class="container">
-    <textarea id="inputText" placeholder="Incolla qui il testo..."></textarea>
+    <textarea id="inputText" placeholder="Paste the text here..."></textarea>
     <div class="button-center">
-      <button id="cleanButton" onclick="pulisciTesto()">Pulisci</button>
+      <button id="cleanButton" onclick="cleanText()">Clean</button>
     </div>
     <div id="outputContainer">
     <div class="button-center">
-        <button id="copyButton" onclick="copiaOutput()" title="Copia">📋 Copia</button>
+        <button id="copyButton" onclick="copyOutput()" title="Copia">📋 Copy</button>
     </div>
     <div id="output"></div>
     </div>
   </div>
     <footer>
-        <p>Progetto disponibile su <a href="https://github.com/PecoraroAmal/CleanTranscribe" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+      <p><a href="https://github.com/PecoraroAmal/CleanTranscribe" target="_blank"><i class="fab fa-github"></i> GitHub</a></p>
+      <p>
+          <a href="https://www.paypal.com/donate/?hosted_button_id=5Z5N9EBJERXC6" target="_blank" class="donation-button">
+              Support the project
+          </a>
+      </p>
+      <p>
+          The donation is <strong>completely voluntary</strong> and <strong>does not grant access to additional features</strong>. It is solely to support the project.
+      </p>
     </footer>
   <script src="script.js"></script>
 </body>

@@ -1,26 +1,25 @@
-# Pulitore Testo
+# Text Cleaner
 https://pecoraroamal.github.io/CleanTranscribe/
 
-Una semplice interfaccia web per pulire testo da trascrizioni di video.  
-Rimuove i timestamp e unisce le righe in un testo continuo, pronto per essere mandato all'AI.
+A simple web interface for cleaning text from video transcripts.  
+Removes timestamps and merges lines into continuous text, ready to be sent to AI.
 
-## ✅ Funzionalità
+## ✅ Features
 
-- Rimuove i timestamp (es. `0:05`, `12:34`)
-- Elimina gli a capo e unisce il testo
-- Copia il testo pulito con un clic
-- Interfaccia minimale in modalità scura
-- Footer con link alla repository
+- Removes timestamps (e.g. `0:05`, `12:34`)
+- Deletes line breaks and merges text
+- Copies the cleaned text with one click
+- Minimal interface in dark mode
+- Footer with link to repository
 
-## 💻 Come usarlo
+## 💻 How to use it
 
-1. Incolla il testo nel box
-2. Clicca su **Pulisci**
-3. Dopo la pulizia, clicca sul pulsante **📋 Copia** per copiare
+1. Paste the text into the box
+2. Click on **Clean**
+3. After cleaning, click on the **📋 Copy** button to copy
 
-## 📦 File inclusi
+## 📦 Files included
 
-- `index.html`: struttura HTML
-- `style.css`: stile scuro minimale
-- `script.js`: logica di pulizia e copia
-
+- `index.html`: HTML structure
+- `style.css`: minimal dark style
+- `script.js`: cleaning and copying logic

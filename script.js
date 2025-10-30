@@ -1,4 +1,4 @@
-function pulisciTesto() {
+function cleanText() {
   const input = document.getElementById('inputText').value;
   if (!input.trim()) return;
 
@@ -13,7 +13,7 @@ function pulisciTesto() {
   document.getElementById('outputContainer').style.display = 'block';
 }
 
-function copiaOutput() {
+function copyOutput() {
   const outputText = document.getElementById('output').textContent;
   const copyButton = document.getElementById('copyButton');
 
@@ -21,7 +21,7 @@ function copiaOutput() {
   navigator.clipboard.writeText(outputText).then(() => {
     // Cambia il testo del pulsante
     const originalText = copyButton.textContent;
-    copyButton.textContent = '✅ Copiato!';
+    copyButton.textContent = '✅ Copied!';
 
     // Dopo 5 secondi torna al testo originale
     setTimeout(() => {
