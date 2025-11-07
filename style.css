@@ -36,7 +36,7 @@ header h1 {
 
 textarea#inputText {
   width: 100%;
-  min-height: 180px;
+  min-height: 380px;
   border-radius: 8px;
   border: 1px solid #353945;
   background: #181a20;
