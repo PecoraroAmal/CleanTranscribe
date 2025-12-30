@@ -19,14 +19,26 @@ function copyOutput() {
 
   // Copia il testo
   navigator.clipboard.writeText(outputText).then(() => {
-    // Cambia il testo del pulsante
-    const originalText = copyButton.textContent;
-    copyButton.textContent = '✅ Copied!';
+    // Cambia l'icona
+    const icon = copyButton.querySelector('i');
+    icon.className = 'fas fa-check';
 
-    // Dopo 5 secondi torna al testo originale
+    // Dopo 2 secondi torna all'icona originale
     setTimeout(() => {
-      copyButton.textContent = originalText;
+      icon.className = 'fas fa-clipboard';
     }, 2000);
   });
+}
+
+function downloadOutput() {
+  const outputText = document.getElementById('output').textContent;
+  if (!outputText.trim()) return;
+
+  const a = document.createElement('a');
+  a.href = 'data:text/plain;charset=utf-8,' + encodeURIComponent(outputText);
+  a.download = 'testo_pulito.txt';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
 }
 
