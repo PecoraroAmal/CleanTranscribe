@@ -44,6 +44,13 @@
         <a href="privacy.html">Privacy &amp; Cookies</a>
       </p>
     </footer>
+  <script src="https://unpkg.com/streamsaver@2.0.6/StreamSaver.min.js"></script>
+  <script>
+    if (window.streamSaver && streamSaver.supported) {
+      // Optional: set sw path if needed by older versions or cross-origin setups
+      try { streamSaver.mitm = 'https://unpkg.com/streamsaver@2.0.6/sw.js'; } catch (e) {}
+    }
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
