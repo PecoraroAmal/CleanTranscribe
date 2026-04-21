@@ -5,6 +5,16 @@ function cleanText() {
   // Rimuove timestamp tipo 0:05, 12:34, 1:23:34 ecc.
   let testo = input.replace(/\b\d{1,2}:\d{2}(:\d{2})?\b/g, '');
 
+  // Nuova logica: rimuove timestamp del nuovo formato YouTube
+  // Passa progressiva: secondi → secondo → minuti → minuto → ore → ora
+  // Cattura sia il numero prima di : che tutto fino alla parola terminale
+  testo = testo.replace(/\d+:\d+[^\n]*?secondi\s*/g, ' ');
+  testo = testo.replace(/\d+:\d+[^\n]*?secondo\s*/g, ' ');
+  testo = testo.replace(/\d+:\d+[^\n]*?minuti\s*/g, ' ');
+  testo = testo.replace(/\d+:\d+[^\n]*?minuto\s*/g, ' ');
+  testo = testo.replace(/\d+:\d+[^\n]*?ore\s*/g, ' ');
+  testo = testo.replace(/\d+:\d+[^\n]*?ora\s*/g, ' ');
+
   // Rimuove newline e spazi multipli
   testo = testo.replace(/\n+/g, ' ').replace(/\s{2,}/g, ' ').trim();
 
